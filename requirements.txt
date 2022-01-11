@@ -7,4 +7,4 @@ PyYAML
 tqdm
 scikit-learn
 streamlit
-opencv-python
+opencv-python-headless==4.2.0.32
