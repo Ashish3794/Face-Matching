@@ -1,6 +1,7 @@
 mtcnn==0.1.0
-https://files.pythonhosted.org/packages/c3/22/bbc80818eecf1050e9fb2c115dda1b3112ef2fb99c5e21b9407941c65db8/tensorflow-2.7.0-cp39-cp39-macosx_10_11_x86_64.whl
-# tensorflow==2.3.1
+# https://files.pythonhosted.org/packages/c3/22/bbc80818eecf1050e9fb2c115dda1b3112ef2fb99c5e21b9407941c65db8/tensorflow-2.7.0-cp39-cp39-macosx_10_11_x86_64.whl
+# tensorflow==2.2.0
+https://files.pythonhosted.org/packages/56/ab/76dbaa5cc59ec54b0e0339d790f72a7fc2631b6ff7ced6ee7b30eba9bf17/tf_nightly-2.9.0.dev20220110-cp310-cp310-macosx_10_14_x86_64.whl
 keras==2.4.3
 keras-vggface==0.6
 keras_applications==1.0.8
