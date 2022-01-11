@@ -2,7 +2,8 @@ from utils.all_utils import read_yaml, create_directory
 import argparse
 import os
 import logging
-from tensorflow.keras.preprocessing import image
+# from tensorflow.keras.preprocessing import image
+from keras.preprocessing import image
 from keras_vggface.utils import preprocess_input
 from keras_vggface.vggface import VGGFace
 import numpy as np
