@@ -4,6 +4,7 @@ The dataset consist of 100 images each of 80 bollywood actors and actresses. In 
 
 ## Download the data from: 
 [Dataset](https://www.kaggle.com/sushilyadav1998/bollywood-celeb-localized-face-dataset)
+There are 3 different folders. Copy all the files from 3 folders and store it in a single folder named data.
 
 ## Important modules
 
@@ -23,7 +24,7 @@ pip install -r requirements.txt
 For package installation 
 
 ```
-python sr/create_image_pickle_file.py
+python src/create_image_pickle_file.py
 ```
 To create pickle file for images. Run this command only once and it will store the data in the specified folder
 
