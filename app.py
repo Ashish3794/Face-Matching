@@ -77,23 +77,27 @@ upload_image = st.file_uploader("Choose an image")
 
 if upload_image:
     if save_upload_image(upload_image):
-        display_image = Image.open(upload_image)
+        try:
+            display_image = Image.open(upload_image)
 
-        features = extract_feature(os.path.join(upload_path, upload_image.name), model, detector)
+            features = extract_feature(os.path.join(upload_path, upload_image.name), model, detector)
 
-        index_pos = recommend(feature_list, features)
+            index_pos = recommend(feature_list, features)
 
-        predictor_actor = "".join(filenames[index_pos].split("\\")[1].split("_"))
+            predictor_actor = "".join(filenames[index_pos].split("\\")[1].split("_"))
 
-        col1, col2 = st.columns(2)
+            col1, col2 = st.columns(2)
 
-        with col1:
-            st.header("Your uploaded image")
-            st.image(display_image)
+            with col1:
+                st.header("Your uploaded image")
+                st.image(display_image)
 
-        with col2:
-            st.header("Your Face matches with "+ predictor_actor)
-            st.image(filenames[index_pos], width = 300)
+            with col2:
+                st.header("Your Face matches with "+ predictor_actor)
+                st.image(filenames[index_pos], width = 300)
+        
+        except:
+            st.markdown("Could not find a match")
 
 
 
