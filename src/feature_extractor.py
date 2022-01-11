@@ -8,6 +8,7 @@ from keras_vggface.vggface import VGGFace
 import numpy as np
 import pickle
 from tqdm import tqdm
+import gzip
 
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
@@ -64,7 +65,7 @@ def feature_extractor(config_path,params_path):
     for file in tqdm(filenames):
         features.append(extractor(file,model))
 
-    pickle.dump(features,open(features_name,'wb'))
+    pickle.dump(features,gzip.open(features_name,'wb'))
 
 
 
