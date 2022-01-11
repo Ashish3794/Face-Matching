@@ -7,4 +7,3 @@ PyYAML
 tqdm
 scikit-learn
 streamlit
-bing-image-downloader
