@@ -1,4 +1,5 @@
 mtcnn==0.1.0
+https://files.pythonhosted.org/packages/c3/22/bbc80818eecf1050e9fb2c115dda1b3112ef2fb99c5e21b9407941c65db8/tensorflow-2.7.0-cp39-cp39-macosx_10_11_x86_64.whl
 # tensorflow==2.3.1
 keras==2.4.3
 keras-vggface==0.6
